@@ -1,0 +1,12 @@
+what,kind,bundleId,bundleVersion,description,time
+stopped,bundle,org.eclipse.rse.subsystems.processes.core,3.1.100.v201003010830,"org.eclipse.rse.subsystems.processes.core",1509364256869
+stopped,bundle,org.eclipse.rse.terminals.ui,1.0.100.v201006041352,"org.eclipse.rse.terminals.ui",1509364256869
+stopped,bundle,org.eclipse.rse.ui,3.1.102.R32x_v201102011435,"org.eclipse.rse.ui",1509364256869
+stopped,bundle,org.hibernate.eclipse,3.4.0.v20110215-1252-H31-GA,"org.hibernate.eclipse",1509364256869
+stopped,bundle,org.eclipse.ui.console,3.5.0.v20100526,"org.eclipse.ui.console",1509364256869
+stopped,bundle,it.eng.spagobi.meta.querybuilder,4.1.0,"it.eng.spagobi.meta.querybuilder",1509364256869
+stopped,bundle,org.eclipse.ui.editors,3.6.1.r361_v20100825-0800,"org.eclipse.ui.editors",1509364256939
+stopped,bundle,org.eclipse.wst.common.snippets,1.2.2.v201101130441,"org.eclipse.wst.common.snippets",1509364256939
+stopped,bundle,org.eclipse.ui.workbench.texteditor,3.6.1.r361_v20100714-0800,"org.eclipse.ui.workbench.texteditor",1509364256939
+stopped,bundle,org.eclipse.compare.core,3.5.101.R36x_v20100929-0800,"org.eclipse.compare.core",1509364256939
+stopped,bundle,org.eclipse.emf.databinding.edit,1.2.1.v20130125-0826,"org.eclipse.emf.databinding.edit",1509364256940

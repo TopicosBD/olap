@@ -1,0 +1,365 @@
+
+{
+	"relationships": [
+		 //==================================================================
+		 // 1 Empresa
+		 //==================================================================
+		 
+		 		 
+		 {
+			//---------------------------------------------------------------
+		 	// 1 Bidirectional one-to-many association to Exame
+		 	//---------------------------------------------------------------
+		 	"name": 'rel_idempresa_in_empresa'
+			, "bidirectional": true
+			, "cardinality": 'one-to-many'
+			, "label": 'fkempresa'
+		
+			, "sourceTable": {
+				"name": 'Empresa'
+				, "uniqueName": 'it.eng.spagobi.meta.Empresa//Empresa'
+				, "package": 'it.eng.spagobi.meta'
+				, "className": 'Empresa'
+			}
+			, "sourceColumns": [
+					'idempresa'								]
+			, "destinationTable": {
+				"name": 'Exame'
+				, "uniqueName": 'it.eng.spagobi.meta.Exame//Exame'
+				, "package": 'it.eng.spagobi.meta'
+				, "className": 'Exame'
+			}
+			, "destinationColumns": [
+					'idempresa'								
+			]
+		}
+		
+		 ,  {
+			//---------------------------------------------------------------
+		 	// 2 Bidirectional one-to-many association to Exame
+		 	//---------------------------------------------------------------
+		 	"name": 'rel_idempresa_in_exame'
+			, "bidirectional": true
+			, "cardinality": 'one-to-many'
+			, "label": 'BR_Empresa_Exame'
+		
+			, "sourceTable": {
+				"name": 'Empresa'
+				, "uniqueName": 'it.eng.spagobi.meta.Empresa//Empresa'
+				, "package": 'it.eng.spagobi.meta'
+				, "className": 'Empresa'
+			}
+			, "sourceColumns": [
+					'idempresa'								]
+			, "destinationTable": {
+				"name": 'Exame'
+				, "uniqueName": 'it.eng.spagobi.meta.Exame//Exame'
+				, "package": 'it.eng.spagobi.meta'
+				, "className": 'Exame'
+			}
+			, "destinationColumns": [
+					'idempresa'								
+			]
+		}
+		
+
+		 //==================================================================
+		 // 2 Exame
+		 //==================================================================
+		 
+		  , 		 
+		 {
+			//---------------------------------------------------------------
+		 	// 1 Bidirectional many-to-one association to Empresa
+		 	//---------------------------------------------------------------
+		 	"name": 'rel_idempresa_in_empresa'
+			, "bidirectional": true
+			, "cardinality": 'many-to-one'
+			, "label": 'fkempresa'
+		
+			, "sourceTable": {
+				"name": 'Exame'
+				, "uniqueName": 'it.eng.spagobi.meta.Exame//Exame'
+				, "package": 'it.eng.spagobi.meta'
+				, "className": 'Exame'
+			}
+			, "sourceColumns": [
+					'idempresa'								]
+			, "destinationTable": {
+				"name": 'Empresa'
+				, "uniqueName": 'it.eng.spagobi.meta.Empresa//Empresa'
+				, "package": 'it.eng.spagobi.meta'
+				, "className": 'Empresa'
+			}
+			, "destinationColumns": [
+					'idempresa'								
+			]
+		}
+		
+		 ,  {
+			//---------------------------------------------------------------
+		 	// 2 Bidirectional many-to-one association to Resultadoexame
+		 	//---------------------------------------------------------------
+		 	"name": 'rel_idresultadoexame_in_resultadoexame'
+			, "bidirectional": true
+			, "cardinality": 'many-to-one'
+			, "label": 'fkresultadoexame'
+		
+			, "sourceTable": {
+				"name": 'Exame'
+				, "uniqueName": 'it.eng.spagobi.meta.Exame//Exame'
+				, "package": 'it.eng.spagobi.meta'
+				, "className": 'Exame'
+			}
+			, "sourceColumns": [
+					'idresultadoexame'								]
+			, "destinationTable": {
+				"name": 'Resultadoexame'
+				, "uniqueName": 'it.eng.spagobi.meta.Resultadoexame//Resultadoexame'
+				, "package": 'it.eng.spagobi.meta'
+				, "className": 'Resultadoexame'
+			}
+			, "destinationColumns": [
+					'idresultadoexame'								
+			]
+		}
+		
+		 ,  {
+			//---------------------------------------------------------------
+		 	// 3 Bidirectional many-to-one association to Tempo
+		 	//---------------------------------------------------------------
+		 	"name": 'rel_idtempo_in_tempo'
+			, "bidirectional": true
+			, "cardinality": 'many-to-one'
+			, "label": 'fktempo'
+		
+			, "sourceTable": {
+				"name": 'Exame'
+				, "uniqueName": 'it.eng.spagobi.meta.Exame//Exame'
+				, "package": 'it.eng.spagobi.meta'
+				, "className": 'Exame'
+			}
+			, "sourceColumns": [
+					'idtempo'								]
+			, "destinationTable": {
+				"name": 'Tempo'
+				, "uniqueName": 'it.eng.spagobi.meta.Tempo//Tempo'
+				, "package": 'it.eng.spagobi.meta'
+				, "className": 'Tempo'
+			}
+			, "destinationColumns": [
+					'idtempo'								
+			]
+		}
+		
+		 ,  {
+			//---------------------------------------------------------------
+		 	// 4 Bidirectional many-to-one association to Empresa
+		 	//---------------------------------------------------------------
+		 	"name": 'rel_idempresa_in_exame'
+			, "bidirectional": true
+			, "cardinality": 'many-to-one'
+			, "label": 'BR_Empresa_Exame'
+		
+			, "sourceTable": {
+				"name": 'Exame'
+				, "uniqueName": 'it.eng.spagobi.meta.Exame//Exame'
+				, "package": 'it.eng.spagobi.meta'
+				, "className": 'Exame'
+			}
+			, "sourceColumns": [
+					'idempresa'								]
+			, "destinationTable": {
+				"name": 'Empresa'
+				, "uniqueName": 'it.eng.spagobi.meta.Empresa//Empresa'
+				, "package": 'it.eng.spagobi.meta'
+				, "className": 'Empresa'
+			}
+			, "destinationColumns": [
+					'idempresa'								
+			]
+		}
+		
+		 ,  {
+			//---------------------------------------------------------------
+		 	// 5 Bidirectional many-to-one association to Resultadoexame
+		 	//---------------------------------------------------------------
+		 	"name": 'rel_idresultadoexame_in_exame'
+			, "bidirectional": true
+			, "cardinality": 'many-to-one'
+			, "label": 'BR_Resultadoexame_Exame'
+		
+			, "sourceTable": {
+				"name": 'Exame'
+				, "uniqueName": 'it.eng.spagobi.meta.Exame//Exame'
+				, "package": 'it.eng.spagobi.meta'
+				, "className": 'Exame'
+			}
+			, "sourceColumns": [
+					'idresultadoexame'								]
+			, "destinationTable": {
+				"name": 'Resultadoexame'
+				, "uniqueName": 'it.eng.spagobi.meta.Resultadoexame//Resultadoexame'
+				, "package": 'it.eng.spagobi.meta'
+				, "className": 'Resultadoexame'
+			}
+			, "destinationColumns": [
+					'idresultadoexame'								
+			]
+		}
+		
+		 ,  {
+			//---------------------------------------------------------------
+		 	// 6 Bidirectional many-to-one association to Tempo
+		 	//---------------------------------------------------------------
+		 	"name": 'rel_idtempo_in_exame'
+			, "bidirectional": true
+			, "cardinality": 'many-to-one'
+			, "label": 'BR_Tempo_Exame'
+		
+			, "sourceTable": {
+				"name": 'Exame'
+				, "uniqueName": 'it.eng.spagobi.meta.Exame//Exame'
+				, "package": 'it.eng.spagobi.meta'
+				, "className": 'Exame'
+			}
+			, "sourceColumns": [
+					'idtempo'								]
+			, "destinationTable": {
+				"name": 'Tempo'
+				, "uniqueName": 'it.eng.spagobi.meta.Tempo//Tempo'
+				, "package": 'it.eng.spagobi.meta'
+				, "className": 'Tempo'
+			}
+			, "destinationColumns": [
+					'idtempo'								
+			]
+		}
+		
+
+		 //==================================================================
+		 // 3 Resultadoexame
+		 //==================================================================
+		 
+		  , 		 
+		 {
+			//---------------------------------------------------------------
+		 	// 1 Bidirectional one-to-many association to Exame
+		 	//---------------------------------------------------------------
+		 	"name": 'rel_idresultadoexame_in_resultadoexame'
+			, "bidirectional": true
+			, "cardinality": 'one-to-many'
+			, "label": 'fkresultadoexame'
+		
+			, "sourceTable": {
+				"name": 'Resultadoexame'
+				, "uniqueName": 'it.eng.spagobi.meta.Resultadoexame//Resultadoexame'
+				, "package": 'it.eng.spagobi.meta'
+				, "className": 'Resultadoexame'
+			}
+			, "sourceColumns": [
+					'idresultadoexame'								]
+			, "destinationTable": {
+				"name": 'Exame'
+				, "uniqueName": 'it.eng.spagobi.meta.Exame//Exame'
+				, "package": 'it.eng.spagobi.meta'
+				, "className": 'Exame'
+			}
+			, "destinationColumns": [
+					'idresultadoexame'								
+			]
+		}
+		
+		 ,  {
+			//---------------------------------------------------------------
+		 	// 2 Bidirectional one-to-many association to Exame
+		 	//---------------------------------------------------------------
+		 	"name": 'rel_idresultadoexame_in_exame'
+			, "bidirectional": true
+			, "cardinality": 'one-to-many'
+			, "label": 'BR_Resultadoexame_Exame'
+		
+			, "sourceTable": {
+				"name": 'Resultadoexame'
+				, "uniqueName": 'it.eng.spagobi.meta.Resultadoexame//Resultadoexame'
+				, "package": 'it.eng.spagobi.meta'
+				, "className": 'Resultadoexame'
+			}
+			, "sourceColumns": [
+					'idresultadoexame'								]
+			, "destinationTable": {
+				"name": 'Exame'
+				, "uniqueName": 'it.eng.spagobi.meta.Exame//Exame'
+				, "package": 'it.eng.spagobi.meta'
+				, "className": 'Exame'
+			}
+			, "destinationColumns": [
+					'idresultadoexame'								
+			]
+		}
+		
+
+		 //==================================================================
+		 // 4 Tempo
+		 //==================================================================
+		 
+		  , 		 
+		 {
+			//---------------------------------------------------------------
+		 	// 1 Bidirectional one-to-many association to Exame
+		 	//---------------------------------------------------------------
+		 	"name": 'rel_idtempo_in_tempo'
+			, "bidirectional": true
+			, "cardinality": 'one-to-many'
+			, "label": 'fktempo'
+		
+			, "sourceTable": {
+				"name": 'Tempo'
+				, "uniqueName": 'it.eng.spagobi.meta.Tempo//Tempo'
+				, "package": 'it.eng.spagobi.meta'
+				, "className": 'Tempo'
+			}
+			, "sourceColumns": [
+					'idtempo'								]
+			, "destinationTable": {
+				"name": 'Exame'
+				, "uniqueName": 'it.eng.spagobi.meta.Exame//Exame'
+				, "package": 'it.eng.spagobi.meta'
+				, "className": 'Exame'
+			}
+			, "destinationColumns": [
+					'idtempo'								
+			]
+		}
+		
+		 ,  {
+			//---------------------------------------------------------------
+		 	// 2 Bidirectional one-to-many association to Exame
+		 	//---------------------------------------------------------------
+		 	"name": 'rel_idtempo_in_exame'
+			, "bidirectional": true
+			, "cardinality": 'one-to-many'
+			, "label": 'BR_Tempo_Exame'
+		
+			, "sourceTable": {
+				"name": 'Tempo'
+				, "uniqueName": 'it.eng.spagobi.meta.Tempo//Tempo'
+				, "package": 'it.eng.spagobi.meta'
+				, "className": 'Tempo'
+			}
+			, "sourceColumns": [
+					'idtempo'								]
+			, "destinationTable": {
+				"name": 'Exame'
+				, "uniqueName": 'it.eng.spagobi.meta.Exame//Exame'
+				, "package": 'it.eng.spagobi.meta'
+				, "className": 'Exame'
+			}
+			, "destinationColumns": [
+					'idtempo'								
+			]
+		}
+		
+
+	]
+}

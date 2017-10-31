@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<SCHEMA name="ModelClinica">
+<Dimension name="Empresa">
+<Hierarchy hasAll="true" 
+allMemberName="All Empresa"
+primaryKey="idempresa" 
+>
+<Table name="empresa"/>
+<Level name="Nomefantasia" column="nomefantasia" 
+uniqueMembers="false"
+/>
+</Hierarchy>
+</Dimension> 
+<Dimension name="Tempo">
+<Hierarchy hasAll="true" 
+allMemberName="All Tempo"
+primaryKey="idtempo" 
+>
+<Table name="tempo"/>
+<Level name="Ano" column="ano" 
+uniqueMembers="false"
+/>
+<Level name="Mes" column="mes" 
+uniqueMembers="false"
+/>
+<Level name="Dia" column="dia" 
+uniqueMembers="false"
+/>
+</Hierarchy>
+</Dimension> 
+<Cube name="Exame">
+<Table name="exame"/>
+<DimensionUsage name="Empresa" source="Empresa" foreignKey="idempresa"/>
+<DimensionUsage name="Tempo" source="Tempo" foreignKey="idtempo"/>
+<Measure name="Quantidade" column="quantidade" aggregator="sum" formatString="#,###"/>
+</Cube> 
+</SCHEMA>
